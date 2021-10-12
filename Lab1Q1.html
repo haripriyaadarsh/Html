@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>USER LOGIN</title>
+</head>
+<body>
+	<header><h1><b><u>USER LOGIN</u></b></h1></header>
+	<form action="/action_page.php">
+	<fieldset>
+	<legend><h3><i>Personal Information</i></h3></legend>	
+  	<label for="name">Name:</label>
+  	<input type="text" id="name" name="name" placeholder="Enter your name here!" maxlength="25" size="25" required><br><br>
+  	<label for="email">Email:</label>
+  	<input type="email" id="email" name="email" value="test@example.com" required autofocus><br><br>
+  	<label for="pwd">Password:</label>
+  	<input type="password" id="pwd" name="pwd" min="6" max="20"required><br><br>
+    </fieldset><br>
+  	<label for="category">Category:</label>
+    <select id="category" name="category" required>
+    <option value="student">Student</option>
+    <option value="employee">Employee</option>
+    <option value="freelancer" selected>Freelancer</option>
+    </select><br><br>
+  	<label for="date">Event Date:</label>
+    <input type="date"name="date" required><br><br>
+    <label for="options">No Of Tickets:</label>
+    <input type="radio"name="options"value="1ticket" required>1 Ticket
+    <input type="radio"name="options"value="2tickets" required checked>2 Tickets
+    <input type="radio"name="options"value="3tickets" required>3 Tickets<br><br>
+    <label for="payment">Payment:</label>
+    <input type="checkbox" name="paymode" value="mode" required>Online Payment<br><br>
+    <label for="area">Notes:</label><br> 
+    <textarea rows = "5" cols = "50" name = "notes" placeholder="Submit your notes here!"></textarea><br><br>
+    <input type="reset" value="reset">
+  	<input type="submit" value="Submit">
+</form>
+</body>
+</html>	
